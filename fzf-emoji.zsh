@@ -1,6 +1,6 @@
 # emoji alpha version
 insert_emoji () {
-  local word_at_cursor="${LBUFFER/* /}${RBUFFER/ */}"
+  local word_at_cursor="${LBUFFER/*( |\'|\")/}"
   local query=${word_at_cursor:-' '}
   local current_path=${0:a:h}
   if [ ! -f $current_path/emojis ]; then
