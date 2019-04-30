@@ -1,2 +1,32 @@
-# emoji-in-the-shell
-💥Emojis in your (zsh) shell 💻
+# emoji-in-the-shell ⚔️
+
+A (very) opinionated approach to add emojis into your command line
+
+You need:
+
+- zsh
+- tmux
+- fzf (it uses the fzf-tmux script)
+- jq (for emoji generation. feel free to use your own libaray file though)
+
+## Install
+
+Clone this repo.
+
+Put 
+
+```
+source path_to_this_repo/emoji-in-the-shell.zsh
+```
+
+into your `.zshrc`.
+
+No, I don't care about plugin managers. Go, figure it out yourself.
+
+## Use
+
+Press Ctrl-E in your zsh shell.
+
+## License
+
+WTFPL
