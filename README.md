@@ -11,7 +11,12 @@ You need:
 
 ## Install
 
-Clone this repo.
+Clone this repo (don't forget about the submodules):
+
+```
+git clone https://github.com/chmanie/emoji-in-the-shell.git --recursive
+```
+
 
 Put 
 
