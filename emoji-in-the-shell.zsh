@@ -1,8 +1,8 @@
 # emoji alpha version
+local current_path=${(%):-%d}
 insert_emoji () {
   local word_at_cursor="${LBUFFER/*( |\'|\")/}"
   local query=${word_at_cursor:-' '}
-  local current_path=${0:a:h}
   if [ ! -f $current_path/emojis ]; then
     local header="I just generated new emojis for you. You're welcome!"
     cat $current_path/emojilib/emojis.json | jq -r 'to_entries | map([.key, .value.char] | join(" ")) | join ("\n")|@text' > emojis
